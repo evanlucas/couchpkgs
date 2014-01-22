@@ -1,6 +1,6 @@
 {
   "name": "couchpkgs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Grab a list of all packages in a npm couch database",
   "main": "index.js",
   "scripts": {
