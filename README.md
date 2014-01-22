@@ -1,6 +1,6 @@
 # couchpkgs
 
-A helper to get all packages from a npm registry
+A helper to get all packages from a npm registry. Written mainly for usage with [smart-private-npm](https://github.com/nodejitsu/smart-private-npm)
 
 ## Install
 
