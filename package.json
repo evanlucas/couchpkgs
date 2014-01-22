@@ -1,0 +1,31 @@
+{
+  "name": "couchpkgs",
+  "version": "0.0.0",
+  "description": "Grab a list of all packages in a npm couch database",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/couchpkgs"
+  },
+  "keywords": [
+    "couch",
+    "npm",
+    "registry"
+  ],
+  "author": "Evan Lucas <evan.lucas@hattiesburgclinic.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanlucas/couchpkgs/issues"
+  },
+  "homepage": "https://github.com/evanlucas/couchpkgs",
+  "dependencies": {
+    "request": "~2.33.0"
+  },
+  "devDependencies": {
+    "should": "~3.0.1",
+    "mocha": "~1.17.1"
+  }
+}
