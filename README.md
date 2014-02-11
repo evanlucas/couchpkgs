@@ -37,8 +37,7 @@ Opts can contain the following keys:
  - fullUrl  {Boolean} don't modify the registry url
  - filter   {Function} filters the results (should return true/false)
 
-**NOTE:** If `fullUrl` is true, the url should point to the view named
-`allVersions` with `?reduce=false` included in the url
+**NOTE:** If `fullUrl` is true, the url should point to /<db>/_all_docs
 
 ##### Example
 

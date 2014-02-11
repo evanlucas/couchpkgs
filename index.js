@@ -12,8 +12,7 @@ var request = require('request')
  *  - fullUrl  {Boolean} don't modify the registry url
  *  - filter   {Function} filters the results (should return true/false)
  *
- * **Note:** If `fullUrl` is true, the url should point to the view named
- * `allVersions` with `?reduce=false` included in the url
+ * **Note:** If `fullUrl` is true, the url should point to /<db>/_all_docs
  *
  * @param {Object} opts
  * @param {Function} cb function(err, pkgs)
@@ -25,7 +24,7 @@ exports.getPkgs = function(opts, cb) {
   var registry = opts.registry || null
   if (!registry) return cb && cb(new Error('registry is required'))
   if (!opts.fullUrl) {
-    registry += '/-/_view/allVersions?reduce=false'
+    registry += '/registry/_all_docs'
   }
 
   request(registry, {json:true}, function(err, res, body) {
